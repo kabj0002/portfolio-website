@@ -1,0 +1,237 @@
+/*************** Reset *********************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /**Fonts**/
+  @font-face {
+    font-family: "Cactus Classical Serif", serif;
+    src: url(fonts/Cactus_Classical_Serif/Cactus_Classical_Serif/CactusClassicalSerif-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Albert Sans", sans-serif;
+    src: url(fonts/Albert_Sans/AlbertSans-VariableFont_wght.ttf);
+  }
+  
+
+/***Variables**/
+  html {
+    --primary: #F2A03D;
+    --secondary: #000000;
+    --tertiary: #ffffff;
+    --quaternary: #035959;
+    --quinary: #D0D98B;
+
+    --fontsizeheader: 100px;
+    --fontsizeheader2: 70px;
+    --fontsizesubheader: 50px;
+    --fontsizesubheader2: 22px;
+    --fontsizetext: 15px;
+    --fontsizelink: 20px;
+    --fontsizefooter: 15px;
+
+    --fontweightheader: 600;
+    --fontweightsubheader: 200;
+    --fontweighttext: 400;
+    --fontweightlink: 300;
+
+  /******Fonts fra Google Fonts******/
+    --fontfamilyheader: "Cactus Classical Serif", serif;
+    --fontfamilysubheader: "Albert Sans", sans-serif;
+    --fontfamilytext: "Cactus Classical Serif", serif;
+    --fontfamilylink: "Albert Sans", sans-serif;
+}
+/**Rotating header**/
+h1 {
+  font-family: var(--fontfamilyheader);
+    color: var(--primary);
+    font-size: var(--fontsizeheader);
+    font-weight: var(--fontweightheader);
+    font-style: normal;
+}
+/**Tema header desktop**/
+h2 {
+  font-family: var(--fontfamilyheader);
+    color: var(--tertiary);
+    font-size: var(--fontsizeheader2);
+    font-weight: var(--fontweightheader);
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+/**Tema header**/
+.green_header {
+  background-color: var(--quinary);
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  /**OBS OBS Få text lidt ned i det grønne felt**/
+}
+.tema_header {
+position: absolute;
+top: 20%;
+}
+
+
+/**Tema header MOBILE**/
+@media (max-width: 800px) {
+h2 {
+  font-family: var(--fontfamilyheader);
+    color: var(--tertiary);
+    font-size: 35px;
+    font-weight: var(--fontweightheader);
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.green_header {
+  background-color: var(--quinary);
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+.tema_header {
+position: absolute;
+top: 20%;
+}
+}
+
+/**Subheader**/
+h3 {
+  font-family: var(--fontfamilysubheader);
+    color: var(--quaternary);
+    font-size: var(--fontsizesubheader);
+    font-weight: var(--fontweightsubheader);
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/**Mindre subheader**/
+h4 {
+  font-family: var(--fontfamilysubheader);
+    color: var(--quaternary);
+    font-size: var(--fontsizesubheader2);
+    font-weight: var(--fontweightsubheader);
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+/**Mindste subheader**/
+h5 {
+  font-family: var(--fontfamilysubheader);
+  color: var(--quaternary);
+  font-size: 18px;
+  font-weight: var(--fontweightsubheader);
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+/**Text og punkter**/
+p {
+  font-family: var(--fontfamilytext);
+    color: var(--secondary);
+    font-size: var(--fontsizetext);
+    font-weight: var(--fontweighttext);
+    font-style: normal;
+}
+li {
+  font-family: var(--fontfamilytext);
+    color: var(--secondary);
+    font-size: var(--fontsizetext);
+    font-weight: var(--fontweighttext);
+    font-style: normal;
+}
+/**Link**/
+a {
+  font-family: var(--fontfamilylink);
+  color: var(--secondary);
+  font-optical-sizing: auto;
+  font-weight: var(--fontweightlink);
+  font-style: normal;
+  font-size: var(--fontsizelink);
+}
+footer p {
+  font-family: var(--fontfamilylink);
+  color: var(--primary);
+  font-optical-sizing: auto;
+  font-weight: var(--fontweightlink);
+  font-style: normal;
+  font-size: var(--fontsizefooter);
+}
+li { /**OOOBS ændrer links både i om mig page, footer og menu!***/
+  margin-left: 3rem;
+  margin-right: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+/**Colors**/
+
+body {
+    background-color: var(--tertiary);
+} 
+
+footer {
+    background-color: var(--tertiary);
+}
+
+/**Margin + padding**/
+footer {
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.div_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.div_footer > :last-child {
+  margin-left: auto;
+}
+p {
+  margin: 0 auto;
+}
+
+
+/**Plasserer logo div korrekt**/
+.logo {
+  margin: 0;
+}
+
+/***Classes der er på flere sider, MOBILE***/
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 3rem;
+}
+.grid_1-x-1 {
+  text-align: center;
+}
+
+/**Desktop**/
+@media (min-width: 800px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 0rem;
+  }
+  .grid_1-x-1 {
+    display: grid;
+    grid-column: 2/3;
+    text-align: center;
+  }
+}

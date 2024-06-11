@@ -1,0 +1,140 @@
+
+img {
+    max-width: 100%;
+  }
+.grid_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+/** Moving text 1 MOBILE, Codepen**/
+.portfolio-container {
+    position: relative;
+    overflow: hidden;
+    height: 120px;
+    width: 800px;
+}
+
+.portfolio {
+    position: absolute;
+    width: auto;
+    right: 0;
+    top: 0;
+    text-align:right;
+}
+
+.portfolio-text {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    white-space: nowrap;
+}
+
+/** Moving text 2 MOBILE, Codepen**/
+.portfolio-container2 {
+    position: relative;
+    overflow: hidden;
+    height: 120px;
+    width: 800px;
+}
+
+.portfolio2 {
+    position: absolute;
+    width: auto;
+    left: 0;
+    top: 0;
+    text-align:left;
+}
+
+.portfolio-text2 {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    white-space: nowrap;
+}
+
+/*Styling af index galleri MOBILE*/
+.grid_1-1-1_galleri {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+.index_galleri_venstre {
+display: grid;
+grid-column: 1/2;
+}
+.index_galleri_midt {
+display: grid;
+grid-column: 2/3;
+}
+.index_galleri_hoejre {
+display: grid;
+grid-column: 3/4;
+}
+.grid_1-1-1_galleri img {
+    align-self: stretch;
+    object-fit: cover;
+    height: 300px;
+  } /**Gør at hoejre billede flugter med de andre**/
+
+/**Styling af text på sitet**/
+  .grid_1-x-1 {
+    max-width: 65ch;
+    text-align: center;
+  }
+  .grid_1-x-1 p {
+   margin-top: 3rem;
+   margin-bottom: 3rem;
+   margin-right: 1rem;
+   margin-left: 1rem;
+   line-height: 1.3rem;
+  }
+
+  /***DESKTOP***/
+  @media (min-width: 800px) {
+    /** Moving text 1 DESKTOP, Codepen**/
+    .portfolio-container {
+        position: relative;
+        overflow: hidden;
+        height: 150px;
+        width: 1500px;
+    }
+    .portfolio {
+        position: absolute;
+        width: auto;
+        right: 0;
+        top: 0;
+        text-align:right;
+    }
+    .portfolio-text {
+        display: inline-block;
+        position: relative;
+        width: auto;
+        white-space: nowrap;
+    }
+/** Moving text 2 DESKTOP, Codepen**/
+    .portfolio-container2 {
+        position: relative;
+        overflow: hidden;
+        height: 150px;
+        width: 1500px;
+    }
+    .portfolio2 {
+        position: absolute;
+        width: auto;
+        left: 0;
+        top: 0;
+        text-align:left;
+    }
+    
+    .portfolio-text2 {
+        display: inline-block;
+        position: relative;
+        width: auto;
+        white-space: nowrap;
+    }
+    .grid_1-1-1_galleri img {
+        align-self: stretch;
+        object-fit: cover;
+        height: 600px;
+      } /**Gør at hoejre billede flugter med de andre**/
+  }
